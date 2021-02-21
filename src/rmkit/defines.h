@@ -13,8 +13,10 @@
 
 #ifdef REMARKABLE
 #define SAVE_DIR "/home/root/harmony/saved_images"
+#define SAVESHM_DIR "/dev/shm"
 #else
 #define SAVE_DIR "./saved_images"
+#define SAVESHM_DIR "./saved_images"
 #endif
 #ifdef DEV
 // #define DEV_KBD "/dev/input/by-path/pci-0000:24:00.3-usb-0:3.2:1.0-event-kbd"
