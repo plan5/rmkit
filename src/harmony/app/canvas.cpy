@@ -123,6 +123,9 @@ namespace app_ui:
     string save():
       return self.vfb->save_lodepng()
 
+    string saveshm():
+      return self.vfb->saveshm_lodepng()
+
     void load_from_png(string filename):
       self.vfb->load_from_png(filename)
       self.dirty = 1

@@ -1,0 +1,22 @@
+total 4556
+drwxr-xr-x 3 root root   4096 Feb 21 17:00 .
+drwxr-xr-x 1 root root   4096 Feb 21 16:58 ..
+drwxr-xr-x 2 root root   4096 Feb 21 17:00 .apps
+-rwxr-xr-x 1 root root 111420 Feb 21 16:58 animation_demo
+-rwxr-xr-x 1 root root 233908 Feb 21 16:58 bufshot
+-rwxr-xr-x 1 root root 351312 Feb 21 16:58 dithering_demo
+-rwxr-xr-x 1 root root 114368 Feb 21 16:58 drawing_demo
+-rwxr-xr-x 1 root root 119416 Feb 21 16:59 genie
+-rwxr-xr-x 1 root root 436280 Feb 21 16:59 harmony
+-rwxr-xr-x 1 root root 392100 Feb 21 16:59 input_demo
+-rwxr-xr-x 1 root root  62068 Feb 21 16:59 lamp
+-rw-r--r-- 1 root root      0 Feb 21 17:00 ls.txt
+-rwxr-xr-x 1 root root 358992 Feb 21 16:59 mines
+-rwxr-xr-x 1 root root  10009 Feb 21 16:59 nao.sh
+-rwxr-xr-x 1 root root  65824 Feb 21 16:59 proc
+-rwxr-xr-x 1 root root 460540 Feb 21 16:59 remux
+-rw-r--r-- 1 root root 870213 Feb 21 16:59 rmkit.h
+-rw-r--r-- 1 root root   1356 Feb 21 17:00 sha256sum.txt
+-rwxr-xr-x 1 root root 485892 Feb 21 17:00 sharenote
+-rwxr-xr-x 1 root root 355480 Feb 21 17:00 simple
+-rw-r--r-- 1 root root 180344 Feb 21 16:56 stb.arm.o

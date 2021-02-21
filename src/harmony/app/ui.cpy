@@ -139,6 +139,7 @@ namespace app_ui:
           DOTS  = "...",\
           QUIT  = "exit",\
           SAVE  = "save",\
+          SAVESHM  = "save2shm",\
           LOAD  = "load"
   class ManageButton: public ui::TextDropdown:
     public:
@@ -152,7 +153,7 @@ namespace app_ui:
     ManageButton(int x, y, w, h, Canvas *c): TextDropdown(x,y,w,h,"...")
       self.canvas = c
       ds := self.add_section("")
-      ds->add_options({DOTS, CLEAR, SAVE, LOAD, QUIT, DOTS, ABOUT})
+      ds->add_options({DOTS, CLEAR, SAVE, SAVESHM, LOAD, QUIT, DOTS, ABOUT})
       self.text = "..."
 
     void select_exit():
@@ -171,6 +172,13 @@ namespace app_ui:
         self.select_exit()
       if option == SAVE:
         filename := self.canvas->save()
+        if self.sd == NULL:
+          self.sd = new SaveDialog(0, 0, DIALOG_WIDTH*2, DIALOG_HEIGHT)
+        title := "Saved as " + filename
+        self.sd->set_title(title)
+        self.sd->show()
+      if option == SAVESHM:
+        filename := self.canvas->saveshm()
         if self.sd == NULL:
           self.sd = new SaveDialog(0, 0, DIALOG_WIDTH*2, DIALOG_HEIGHT)
         title := "Saved as " + filename
